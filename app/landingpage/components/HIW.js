@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HIW = () => {
   return (
-    <section className="hiw-section bg-transparent py-10 px-6 md:px-0">
+    <section className=" bg-transparent py-10 px-6 md:px-0">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-green-700 mb-10">
           How it works?

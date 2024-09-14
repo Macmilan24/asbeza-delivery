@@ -3,6 +3,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import HIW from "./components/HIW";
+import Footer from "@/components/main/Footer";
 
 export default function LandingPage() {
   return (
@@ -11,6 +12,7 @@ export default function LandingPage() {
       <Hero />
       <Features />
       <HIW />
+      <Footer />
     </div>
   );
 }

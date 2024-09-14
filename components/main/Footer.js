@@ -38,7 +38,7 @@ const Footer = () => {
                 <span className="ml-4 font-thin">info@asbeza.com</span>
               </div>
               <div className="w-full flex flex-col md:flex-row justify-center md:justify-between items-center pb-2">
-                <div className="flex justify-center md:justify-end items-center">
+                <div className="flex justify-center md:justify-end items-center mb-2 md:mb-0">
                   <FaPhone />
                   <span className="ml-4 font-thin">(251) 923512007</span>
                 </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-full flex justify-between items-center ">
+              <div className="w-full flex justify-between items-center mt-4 ">
                 <span className="">Social Media</span>
                 <a href="#" className="text-white hover:text-gray-400">
                   <FaFacebookF size={20} />

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -26,14 +27,30 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center justify-center gap-14 pl-20">
-          {["Home", "About", "Services", "Contact"].map((item) => (
-            <div
-              key={item}
-              className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
-            >
-              {item}
-            </div>
-          ))}
+          <Link
+            href="/"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            href="/services"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Services
+          </Link>
+          <Link
+            href="/contact"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Contact
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,14 +77,31 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-24 left-0 w-full flex flex-col justify-center backdrop-blur-xl bg-slate-50 py-4 px-4 shadow-lg z-50">
-          {["Home", "About", "Services", "Contact"].map((item) => (
-            <div
-              key={item}
-              className="text-black text-sm font-medium leading-loose tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
-            >
-              {item}
-            </div>
-          ))}
+          <Link
+            href="/"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            href="/services"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Services
+          </Link>
+          <Link
+            href="/contact"
+            className="text-black z-50 text-sm font-medium leading-normal tracking-tight hover:text-[#067017] transition-colors duration-300 cursor-pointer"
+          >
+            Contact
+          </Link>
+
           <div className="mt-4 flex flex-col gap-3">
             <button className="w-full py-2 rounded-full border-2 border-black text-black text-sm font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-md hover:shadow-lg">
               Sign In

@@ -1,6 +1,13 @@
+"use client";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+// Dynamically load the MapComponent to avoid SSR issues
+const MapComponent = dynamic(() => import("@/components/main/MapComponent"), {
+  ssr: false,
+});
 
 export default function ContactPage() {
   return (
@@ -115,8 +122,8 @@ export default function ContactPage() {
             Find Us on the Map
           </h2>
           <div className="h-96 bg-gray-300 rounded-lg">
-            {/* Replace this div with an actual map component or embed */}
-            <p className="text-center pt-40">Map placeholder</p>
+            {/* Embed the Leaflet map */}
+            <MapComponent />
           </div>
         </div>
       </section>
